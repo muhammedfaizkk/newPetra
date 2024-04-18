@@ -137,11 +137,6 @@ body {
     padding: 50px;
 }
 
-.swiper-slide {
-    /* padding-right:auto; */
-    overflow: hidden;
-}
-
 
 .swiper-pagination .swiper-pagination-bullet {
     background-color: black;
