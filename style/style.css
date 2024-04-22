@@ -176,6 +176,16 @@ body {
     justify-content: center;
     padding: 20px;
     cursor: pointer;
+    flex: 1; 
+}
+.features-main-child img {
+    max-width: 100%;
+    height: auto; /* To maintain aspect ratio */
+}
+
+/* Ensure equal height cards */
+.features-main-child {
+    grid-row: span 2; /* Each card spans two grid rows */
 }
 
 .features-main {
@@ -537,7 +547,7 @@ body {
     }
 
     .features-main {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); 
     }
 
 }
@@ -632,11 +642,14 @@ body {
     }
 
     .features-main-child {
-        padding: 4px;
+        padding: 10px;
+        display: block;
+        align-items: center;
     }
 
     .features-main {
         gap: 10px;
+        
     }
 }
 
