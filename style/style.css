@@ -515,9 +515,11 @@ body {
     display: flex;
     gap: 20px;
 }
-.btn-enq{
+
+.btn-enq {
     background-color: #494646;
 }
+
 .btn-enq:hover {
     background-color: #524e4e;
     cursor: pointer;
@@ -669,7 +671,7 @@ body {
         /* Single column for even smaller screens */
     /* }  */
     .product-end {
-        padding: 15px 30px;
+        padding: 30px;
     }
 
     .socialmdia-icons {
