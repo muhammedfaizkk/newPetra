@@ -137,7 +137,7 @@ body {
 }
 
 .banner-btn button:hover {
-    background-color: rgb(222, 216, 216);
+    background-color: rgb(201, 196, 196);
     color: black;
     cursor: pointer;
     transition: all 0.5s;
@@ -610,6 +610,9 @@ body {
 
     .swiper {
         display: none !important;
+    }
+    .carousel-indicators{
+        bottom:40px !important;
     }
 
     .product-end {
