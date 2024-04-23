@@ -726,6 +726,16 @@ body {
         width: 18rem !important;
     }
 }
+@media only screen and (max-width:460px) {
+    .lap-view{
+        display: none;
+    }
+}
+@media only screen and (min-width:460px) {
+   .mob-view{
+    display: none;
+   } 
+}
 
 @media only screen and (max-width:390px) {
     .header-section {
