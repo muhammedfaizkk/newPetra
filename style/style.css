@@ -132,12 +132,12 @@ body {
 .banner-btn button {
     padding: 10px 20px;
     background: transparent;
-    border: 2px solid #bebebe;
-    color: white;
+    border: 2px solid #262626;
+    color:#262626;
 }
 
 .banner-btn button:hover {
-    background-color: white;
+    background-color: rgb(222, 216, 216);
     color: black;
     cursor: pointer;
     transition: all 0.5s;
@@ -160,10 +160,12 @@ body {
 .banner-content h2 {
     font-weight: 700;
     font-size: 52px;
+    color:#262626;
 }
 
 .banner-content p {
     font-size: 16px;
+    color:#262626 !important;
 }
 
 .swiper-slide {
@@ -428,6 +430,7 @@ body {
     position: relative;
     /* Center text */
 }
+
 .highlights {
     cursor: pointer;
     margin-bottom: 5px;
@@ -551,17 +554,21 @@ body {
     background-color: #524e4e;
     cursor: pointer;
 }
-.highlights{
+
+.highlights {
     color: rgb(238, 238, 176);
 }
 
-@media screen and (max-width: 768px) {
-    .slide p {
-        padding: 0 20px;
+@media only screen and (max-width:1271px) {
+    .banner-content {
+        position: absolute;
+        top: 10%;
+        left: 8%;
+        width: 50%;
     }
 
-    .nav-btn {
-        display: none;
+    .banner-content h2 {
+        font-size: 38px;
     }
 }
 
@@ -626,15 +633,10 @@ body {
 }
 
 @media only screen and (max-width:950px) {
-    .banner-content {
-        position: absolute;
-        top: 20%;
-        left: 10%;
-        width: 50%;
-    }
+
 
     .carousel-indicators {
-        bottom: 60px !important;
+        bottom: 40px !important;
     }
 }
 
@@ -656,7 +658,16 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .slide p {
+        padding: 0 20px;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
 }
+
 
 @media (max-width: 605px) {
     .social-media {
@@ -670,12 +681,7 @@ body {
 
 @media only screen and (max-width:585px) {
     .banner-content {
-        position: absolute;
-        top: 10%;
-        left: 0px;
-        width: 100%;
-        padding: 0px 10px;
-
+      display: none;
     }
 
     .carousel-indicators {
@@ -712,9 +718,7 @@ body {
 }
 
 @media only screen and (max-width:469px) {
-    .banner-content {
-        display: none;
-    }
+
 
     .carousel-indicators li {
         width: 13px !important;
@@ -726,15 +730,17 @@ body {
         width: 18rem !important;
     }
 }
+
 @media only screen and (max-width:460px) {
-    .lap-view{
+    .lap-view {
         display: none;
     }
 }
+
 @media only screen and (min-width:460px) {
-   .mob-view{
-    display: none;
-   } 
+    .mob-view {
+        display: none;
+    }
 }
 
 @media only screen and (max-width:390px) {
