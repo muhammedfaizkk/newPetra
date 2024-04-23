@@ -428,8 +428,35 @@ body {
     position: relative;
     /* Center text */
 }
+.highlights {
+    cursor: pointer;
+    margin-bottom: 5px;
+    position: relative;
+    color: rgb(238, 238, 176);
+}
 
 .footer-menu:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    /* Center the line */
+    transform: translateX(-50%);
+    /* Adjust to center the line properly */
+    width: 100%;
+    /* Set the width of the line to match the text width */
+    height: 2px;
+    background-color: rgb(243, 229, 229);
+    transition: background-color 0.3s;
+}
+
+
+
+.highlights:hover::after {
+    background-color: rgb(243, 229, 229);
+}
+
+.highlights:hover::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -523,6 +550,9 @@ body {
 .btn-enq:hover {
     background-color: #524e4e;
     cursor: pointer;
+}
+.highlights{
+    color: rgb(238, 238, 176);
 }
 
 @media screen and (max-width: 768px) {
