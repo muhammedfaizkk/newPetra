@@ -16,6 +16,12 @@ body {
 .ftr-menu {
     color: rgb(153, 147, 147);
 }
+.bannercnt-mob{
+    position: absolute;
+    top:50px;
+    left:20px;
+    color: white;
+}
 
 .nav-logo {
     width: 170px;
@@ -133,7 +139,7 @@ body {
     padding: 10px 20px;
     background: transparent;
     border: 2px solid #262626;
-    color:#262626;
+    color: #262626;
 }
 
 .banner-btn button:hover {
@@ -160,12 +166,12 @@ body {
 .banner-content h2 {
     font-weight: 700;
     font-size: 52px;
-    color:#262626;
+    color: #262626;
 }
 
 .banner-content p {
     font-size: 16px;
-    color:#262626 !important;
+    color: #262626 !important;
 }
 
 .swiper-slide {
@@ -323,19 +329,21 @@ body {
 
 
 .container-testi {
-    background-color: white;
+  
     display: flex;
     justify-content: center;
+    
+}
+.testi-main{
+    background-color: white;
     padding: 50px 0px;
 }
-
 .testimonial {
     position: relative;
     max-width: 900px;
     width: 100%;
     padding: 50px 0;
     overflow: hidden;
-    margin-top: 40px;
 }
 
 .testimonial .image {
@@ -611,8 +619,9 @@ body {
     .swiper {
         display: none !important;
     }
-    .carousel-indicators{
-        bottom:40px !important;
+
+    .carousel-indicators {
+        bottom: 40px !important;
     }
 
     .product-end {
@@ -684,9 +693,9 @@ body {
 
 @media only screen and (max-width:585px) {
     .banner-content {
-      display: none;
+        display: none;
     }
-
+  
     .carousel-indicators {
         bottom: 10px !important;
         margin-bottom: 0px !important;
@@ -701,7 +710,12 @@ body {
     }
 }
 
-@media (min-width: 480px) {}
+@media (min-width:585px) {
+    .bannercnt-mob{
+        display: none;
+    }
+
+}
 
 @media (max-width: 480px) {
 
