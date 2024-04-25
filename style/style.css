@@ -24,6 +24,7 @@ body {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    max-width: 100%;
 }
 
 .nav-logo {
