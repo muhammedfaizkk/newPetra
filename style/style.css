@@ -13,14 +13,14 @@ body {
     line-height: 24px !important;
 }
 
-.ftr-menu {
-    color: rgb(153, 147, 147);
-}
-.bannercnt-mob{
+
+
+.bannercnt-mob {
     position: absolute;
-    top:50px;
-    left:20px;
+    top: 50px;
+    left: 20px;
     color: white;
+    text-align: center;
 }
 
 .nav-logo {
@@ -143,7 +143,7 @@ body {
 }
 
 .banner-btn button:hover {
-    background-color: rgb(201, 196, 196);
+    background-color: rgb(227, 216, 216);
     color: black;
     cursor: pointer;
     transition: all 0.5s;
@@ -329,15 +329,17 @@ body {
 
 
 .container-testi {
-  
+
     display: flex;
     justify-content: center;
-    
+
 }
-.testi-main{
+
+.testi-main {
     background-color: white;
     padding: 50px 0px;
 }
+
 .testimonial {
     position: relative;
     max-width: 900px;
@@ -426,6 +428,7 @@ body {
     gap: 20px;
     margin: 0;
     list-style-type: none;
+    margin-bottom: 30px;
 }
 
 .slide {
@@ -443,43 +446,6 @@ body {
     cursor: pointer;
     margin-bottom: 5px;
     position: relative;
-    color: rgb(238, 238, 176);
-}
-
-.footer-menu:hover::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    /* Center the line */
-    transform: translateX(-50%);
-    /* Adjust to center the line properly */
-    width: 100%;
-    /* Set the width of the line to match the text width */
-    height: 2px;
-    background-color: rgb(243, 229, 229);
-    transition: background-color 0.3s;
-}
-
-
-
-.highlights:hover::after {
-    background-color: rgb(243, 229, 229);
-}
-
-.highlights:hover::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    /* Center the line */
-    transform: translateX(-50%);
-    /* Adjust to center the line properly */
-    width: 100%;
-    /* Set the width of the line to match the text width */
-    height: 2px;
-    background-color: rgb(243, 229, 229);
-    transition: background-color 0.3s;
 }
 
 
@@ -505,15 +471,6 @@ body {
     position: relative;
 }
 
-.footer-cpyrgt::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #dccece;
-}
 
 
 .footer-cpyrgt::before {
@@ -534,7 +491,7 @@ body {
 
 .footer-heading {
     font-size: 18px;
-    color: rgb(231, 227, 227);
+
 }
 
 .pro-img {
@@ -563,9 +520,86 @@ body {
     cursor: pointer;
 }
 
-.highlights {
-    color: rgb(238, 238, 176);
+
+
+.img-x-slider {
+    cursor: pointer;
 }
+
+.main-cnt-mob {
+    position: relative;
+    padding: 0px 10px 10px;
+}
+
+.footer-sntmain {
+    padding: 50px 50px 0px 50px;
+    background-color: #262626;
+}
+
+.footer-subhead {
+    position: relative;
+}
+
+.footer-subhead::after {
+    content: '';
+    position: absolute;
+    bottom: 00px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+
+.main-cnt-mob::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    /* Adjust as needed */
+    width: 1px;
+    /* Adjust thickness of the border */
+    background-color: rgb(229, 221, 221);
+    /* Adjust color of the border */
+}
+
+.main-cnt-mobb::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    /* Adjust as needed */
+    width: 1px;
+    /* Adjust thickness of the border */
+    background-color: rgb(255, 244, 244);
+    /* Adjust color of the border */
+}
+
+
+.newaLetter-input {
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.newaLetter-input input {
+    background-color: transparent;
+    color: white;
+}
+
+.footer-seconds {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding-top: 25px;
+    margin-top: 60px !important;
+    margin-bottom: 30px !important;
+}
+
+.footer-seconds-sub {
+    padding: 25px 50px 50px;
+}
+
 
 @media only screen and (max-width:1271px) {
     .banner-content {
@@ -646,7 +680,6 @@ body {
 
 @media only screen and (max-width:950px) {
 
-
     .carousel-indicators {
         bottom: 40px !important;
     }
@@ -661,6 +694,10 @@ body {
 
     }
 
+    .main-cnt-mobb::after {
+        display: none;
+    }
+   
     .carousel-indicators {
         bottom: 10px !important;
         margin-bottom: 0px !important;
@@ -695,7 +732,7 @@ body {
     .banner-content {
         display: none;
     }
-  
+
     .carousel-indicators {
         bottom: 10px !important;
         margin-bottom: 0px !important;
@@ -711,27 +748,31 @@ body {
 }
 
 @media (min-width:585px) {
-    .bannercnt-mob{
+    .bannercnt-mob {
         display: none;
     }
 
 }
 
+@media only screen and (max-width:585px) {
+ .main-cnt-mob::after{
+    display: none;
+ }
+ .footer-subhead::after {
+  display: none;
+}
+}
+
 @media (max-width: 480px) {
 
-    /* .features-main {
-        grid-template-columns: 1fr;
-        /* Single column for even smaller screens */
-    /* }  */
+    .footer-sntmain {
+        padding: 30px 30px 0px 30px;
+        background-color: #262626;
+    }
     .product-end {
         padding: 30px;
     }
 
-    .socialmdia-icons {
-        justify-content: center;
-        display: none;
-
-    }
 }
 
 @media only screen and (max-width:469px) {
