@@ -701,7 +701,7 @@ body {
     .main-cnt-mobb::after {
         display: none;
     }
-   
+
     .carousel-indicators {
         bottom: 10px !important;
         margin-bottom: 0px !important;
@@ -759,17 +759,19 @@ body {
 }
 
 @media only screen and (max-width:585px) {
- .main-cnt-mob::after{
-    display: none;
- }
- .footer-subhead::after {
-  display: none;
-}
-.title-1{
-    line-height:28px !important;
-    font-size:30px !important;
-    margin-bottom:10px;
-}
+    .main-cnt-mob::after {
+        display: none;
+    }
+
+    .footer-subhead::after {
+        display: none;
+    }
+
+    .title-1 {
+        line-height: 28px !important;
+        font-size: 30px !important;
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -778,6 +780,7 @@ body {
         padding: 30px 30px 0px 30px;
         background-color: #262626;
     }
+
     .product-end {
         padding: 30px;
     }
