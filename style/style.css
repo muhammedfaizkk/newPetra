@@ -20,7 +20,10 @@ body {
     position: absolute;
     top: 50px;
     color: white;
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    align-items: center;
 }
 
 .nav-logo {
