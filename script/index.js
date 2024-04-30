@@ -1,4 +1,3 @@
-
 var mainSwiper = new Swiper('.mainSwiper', {
   slidesPerView: 1,
   spaceBetween: 30,
@@ -8,23 +7,21 @@ var mainSwiper = new Swiper('.mainSwiper', {
   },
   autoplay: {
       delay: 5000,
-      disableOnInteraction: false,}
+      disableOnInteraction: false,
+  }
 });
 
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    grabCursor: true,
-    loop: true,
-    pagination: {
+var mySwiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  grabCursor: true,
+  loop: true,
+  pagination: {
       el: ".swiper-pagination",
       clickable: true,
-    },
-    navigation: {
+  },
+  navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
-    },
-  });
-  
+  },
+});
 
-  
-  
