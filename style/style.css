@@ -689,7 +689,7 @@ select option:hover {
 @media only screen and (min-width:1600px) {
     .banner-content {
         position: absolute;
-        top: 20%;
+        top: 25%;
         left: 8%;
         width: 50%;
     }
