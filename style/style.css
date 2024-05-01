@@ -546,7 +546,8 @@ body {
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: white;
+    background-color: rgb(155, 143, 143);
+    opacity:50%;
 }
 
 .main-cnt-mob::after {
@@ -558,7 +559,8 @@ body {
     /* Adjust as needed */
     width: 1px;
     /* Adjust thickness of the border */
-    background-color: rgb(229, 221, 221);
+    background-color: rgb(155, 143, 143);
+    opacity:50%;
     /* Adjust color of the border */
 }
 
@@ -571,7 +573,8 @@ body {
     /* Adjust as needed */
     width: 1px;
     /* Adjust thickness of the border */
-    background-color: rgb(255, 244, 244);
+    background-color: rgb(155, 143, 143);
+    opacity:50%;
     /* Adjust color of the border */
 }
 
@@ -587,8 +590,8 @@ body {
     color: white;
 }
 
-.footer-seconds {
-    border: 1px solid white;
+.footer-seconds { 
+    border: 1px solid rgba(155, 143, 143, 0.5);
     border-radius: 10px;
     padding-top: 25px;
     margin-top: 60px !important;
@@ -658,9 +661,7 @@ select option {
 }
 
 /* Style the hover effect on options */
-select option:hover {
-    background-color: #f0f0f0;
-}
+
 
 .submit-delers {
     width: 300px;
@@ -685,6 +686,31 @@ select option:hover {
     height: 500px;
 }
 
+.dropdown-item:hover {
+    background-color: #262626 !important;
+    color: white !important;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none;
+    /* Remove default arrow in Firefox */
+    -webkit-appearance: none;
+    /* Remove default arrow in Chrome and Safari */
+    background-color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    outline: 0;
+}
+.input-sp{
+    position: relative;
+    width: 350px;
+    margin: 0 auto;
+
+}
 
 @media only screen and (min-width:1600px) {
     .banner-content {
@@ -936,6 +962,9 @@ select option:hover {
     .input-spy {
         width: 300px;
     }
+    .input-sp{
+        width: 300px;
+    }
 
     .dlrs-cnt {
         padding: 15px;
@@ -956,6 +985,9 @@ select option:hover {
     }
 
     .input-spy {
+        width: 250px;
+    }
+    .input-sp{
         width: 250px;
     }
 
