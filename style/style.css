@@ -547,7 +547,7 @@ body {
     width: 100%;
     height: 1px;
     background-color: rgb(155, 143, 143);
-    opacity:50%;
+    opacity: 50%;
 }
 
 .main-cnt-mob::after {
@@ -560,7 +560,7 @@ body {
     width: 1px;
     /* Adjust thickness of the border */
     background-color: rgb(155, 143, 143);
-    opacity:50%;
+    opacity: 50%;
     /* Adjust color of the border */
 }
 
@@ -574,7 +574,7 @@ body {
     width: 1px;
     /* Adjust thickness of the border */
     background-color: rgb(155, 143, 143);
-    opacity:50%;
+    opacity: 50%;
     /* Adjust color of the border */
 }
 
@@ -590,7 +590,7 @@ body {
     color: white;
 }
 
-.footer-seconds { 
+.footer-seconds {
     border: 1px solid rgba(155, 143, 143, 0.5);
     border-radius: 10px;
     padding-top: 25px;
@@ -626,7 +626,6 @@ body {
 
 /* Style the select element */
 select {
-    text-align: center;
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -686,6 +685,11 @@ select option {
     height: 500px;
 }
 
+.form-imgService img {
+    width: 100%;
+    height: 657px;
+}
+
 .dropdown-item:hover {
     background-color: #262626 !important;
     color: white !important;
@@ -705,7 +709,8 @@ select option {
     cursor: pointer;
     outline: 0;
 }
-.input-sp{
+
+.input-sp {
     position: relative;
     width: 350px;
     margin: 0 auto;
@@ -873,6 +878,10 @@ select option {
     .form-img img {
         height: 300px;
     }
+
+    .form-imgService img {
+        height: 300px;
+    }
 }
 
 
@@ -962,7 +971,8 @@ select option {
     .input-spy {
         width: 300px;
     }
-    .input-sp{
+
+    .input-sp {
         width: 300px;
     }
 
@@ -987,7 +997,8 @@ select option {
     .input-spy {
         width: 250px;
     }
-    .input-sp{
+
+    .input-sp {
         width: 250px;
     }
 
