@@ -717,8 +717,8 @@ select option {
     .banner-content {
         position: absolute;
         top: 25%;
-        left: 0%;
-        width: 30%;
+        left: 10%;
+        width: 40%;
     }
 }
 
