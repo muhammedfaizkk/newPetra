@@ -717,8 +717,8 @@ select option {
     .banner-content {
         position: absolute;
         top: 25%;
-        left: 8%;
-        width: 50%;
+        left: 0%;
+        width: 30%;
     }
 }
 
@@ -933,6 +933,10 @@ select option {
 
     .footer-heading {
         text-align: center;
+    }
+
+    .banner-content {
+        display: none;
     }
 }
 
