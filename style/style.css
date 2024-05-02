@@ -759,6 +759,9 @@ select option {
 .meetourTeamcard img{
     border-radius:50%;
 }
+.aboutUsswiper{
+    margin:0px 10px;
+}
 @media only screen and (min-width:1600px) {
     .banner-content {
         position: absolute;
@@ -1045,7 +1048,7 @@ select option {
         width: 18rem !important;
     }
     .meetourTeamcard{
-        width:130px !important;
+        width:140px !important;
     }
 }
 
