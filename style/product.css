@@ -683,9 +683,9 @@ select option {
 
 .cardDcnt {
     position: absolute;
-    bottom:0px;
+    bottom: 0px;
     color: white;
-    max-width:95%;
+    width: 300px;
     background-color: rgba(38, 38, 38, 0.6);
 }
 
@@ -712,7 +712,7 @@ select option {
 
 .swiper-slide img {
     display: block;
-    width:300px !important  ;
+    width: 300px !important;
     height: 500px !important;
 }
 
