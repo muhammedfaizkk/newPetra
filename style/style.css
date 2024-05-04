@@ -178,7 +178,7 @@ body {
     color: #262626 !important;
 }
 
-.swiper-slide {
+.producdescription {
     display: flex !important;
     align-items: center;
     justify-content: center;
@@ -187,14 +187,14 @@ body {
 }
 
 
-.swiper-slide img {
+.producdescription img {
     max-width: 50%;
     height: auto;
 }
 
 
 
-.swiper-slide p {
+.producdescription p {
 
     margin: 0 20px;
     /* Adjust spacing */
@@ -322,7 +322,7 @@ body {
     text-align: center;
 }
 
-.swiper-slide i {
+.producdescription i {
     font-size: 30px;
 }
 
@@ -768,6 +768,68 @@ select option {
     margin: 0px 10px;
 }
 
+.producSlidermain {
+    position: relative;
+    height: 100%;
+    padding: 70px 50px 70px 50px;
+}
+
+.mySwiperprosection {
+    width: 100%;
+    height: 100%;
+}
+
+.cardDcnt {
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    width: 300px;
+    background-color: rgba(38, 38, 38, 0.6);
+}
+
+.ourSignatureDoors {
+    max-width: 100%;
+    text-align: center;
+    font-size: 18px;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ourSignatureDoors img {
+    display: block;
+    width: 300px !important;
+    height: 500px !important;
+}
+
+.ourSignatureDoors h2 {
+    display: none;
+}
+
+.ourSignatureDoors:hover h2 {
+    display: block;
+}
+
+.homeDoorprosection {
+    position: relative;
+    height: 100%;
+    padding: 0px 50px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: white !important;
+    background-color: #262626;
+    padding: 25px;
+    border-radius: 50%;
+}
+
+
 @media only screen and (min-width:1600px) {
     .banner-content {
         position: absolute;
@@ -821,7 +883,7 @@ select option {
         padding: 25px;
     }
 
-    .swiper-slide {
+    .producdescription {
         padding-right: 25px;
     }
 
@@ -1039,6 +1101,11 @@ select option {
         padding: 30px;
     }
 
+    .homeDoorprosection {
+        position: relative;
+        padding: 20px 10px 70px 10px;
+    }
+
 
 }
 
@@ -1126,6 +1193,4 @@ select option {
 }
 
 .footer-logo {
-    width: 220px;
-
-}
+    width: 22

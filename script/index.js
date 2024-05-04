@@ -11,6 +11,40 @@ var mainSwiper = new Swiper('.mainSwiper', {
   }
 });
 
+
+
+var swiper = new Swiper(".homeDoorprosection", {
+  slidesPerView: 1,
+  grabCursor: true,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  spaceBetween:40,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    500: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    800: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 50,
+    },
+  },
+});
+
+
+
+
 var mySwiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   grabCursor: true,
@@ -48,7 +82,13 @@ var aboutUsswiper = new Swiper(".aboutUsswiper", {
 
 var swiper = new Swiper(".mySwiperprosection", {
   slidesPerView: 1,
-  spaceBetween: 10,
+  grabCursor: true,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  spaceBetween:40,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -70,26 +110,32 @@ var swiper = new Swiper(".mySwiperprosection", {
 });
 
 
-var swiper = new Swiper(".Ddoorprosection", {
-  slidesPerView: 1,
-  spaceBetween: 2,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-    500: {
-      slidesPerView: 2,
-      spaceBetween: 40,
+  var swiper = new Swiper(".Ddoorprosection", {
+    slidesPerView: 1,
+    grabCursor: true,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
     },
-    800: {
-      slidesPerView: 3,
-      spaceBetween: 40,
+    spaceBetween:40,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
-    1200: {
-      slidesPerView: 4,
-      spaceBetween: 50,
+    breakpoints: {
+      500: {
+        slidesPerView: 2,
+        spaceBetween: 40,
+      },
+      800: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 50,
+      },
     },
-  },
-});
+  });
 
