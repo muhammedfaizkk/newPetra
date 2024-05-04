@@ -680,6 +680,13 @@ select option {
     width: 100%;
     height: 100%;
 }
+.cardDcnt{
+    position: absolute;
+    bottom:50px;
+    color: white;
+    width:80%;
+    background-color: rgba(38, 38, 38, 0.8);
+}
 
 .swiper-slide {
     text-align: center;
@@ -706,8 +713,7 @@ select option {
 .swiper-slide img {
     display: block;
     width: 90%;
-    height: 90%;
-    object-fit: cover;
+    height: 500px !important;
 }
 
 .swiper-button-prev,

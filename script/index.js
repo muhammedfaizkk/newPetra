@@ -72,7 +72,7 @@ var swiper = new Swiper(".mySwiperprosection", {
 
 var swiper = new Swiper(".Ddoorprosection", {
   slidesPerView: 1,
-  spaceBetween: 10,
+  spaceBetween: 2,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
