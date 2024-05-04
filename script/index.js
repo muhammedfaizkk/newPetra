@@ -2,12 +2,12 @@ var mainSwiper = new Swiper('.mainSwiper', {
   slidesPerView: 1,
   spaceBetween: 30,
   pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
+    el: '.swiper-pagination',
+    clickable: true,
   },
   autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
+    delay: 5000,
+    disableOnInteraction: false,
   }
 });
 
@@ -16,12 +16,12 @@ var mySwiper = new Swiper(".mySwiper", {
   grabCursor: true,
   loop: true,
   pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+    el: ".swiper-pagination",
+    clickable: true,
   },
   navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
 
@@ -31,18 +31,65 @@ var aboutUsswiper = new Swiper(".aboutUsswiper", {
   grabCursor: true,
   loop: true,
   autoplay: {
-      delay: 5000, 
-      disableOnInteraction: false,
+    delay: 5000,
+    disableOnInteraction: false,
   },
   pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+    el: ".swiper-pagination",
+    clickable: true,
   },
   navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
 
 
+
+var swiper = new Swiper(".mySwiperprosection", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    500: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    800: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 50,
+    },
+  },
+});
+
+
+var swiper = new Swiper(".Ddoorprosection", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    500: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    800: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 50,
+    },
+  },
+});
 
