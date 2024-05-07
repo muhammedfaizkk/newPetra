@@ -11,7 +11,6 @@ body {
     margin: 0;
     padding: 0;
     line-height: 24px !important;
-    overflow: hidden;
 }
 
 
@@ -751,10 +750,7 @@ select option {
     padding: 70px 0px;
 }
 
-.meetourTeamtop {
-    display: flex;
-    gap: 40px;
-}
+
 
 .meetourTeamcard {
     width: 200px;
@@ -829,6 +825,13 @@ select option {
     border-radius: 50%;
 }
 
+.swiper-button-prev::after {
+    font-size: 25px !important;
+}
+
+.swiper-button-next::after {
+    font-size: 25px !important;
+}
 
 @media only screen and (min-width:1600px) {
     .banner-content {
@@ -1193,4 +1196,5 @@ select option {
 }
 
 .footer-logo {
-    width: 22
+    width: 250px
+}

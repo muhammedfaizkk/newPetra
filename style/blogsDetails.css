@@ -1,0 +1,21 @@
+.cardsInner-blogs {
+    padding: 70px 0px;
+}
+
+.blogsDetailsCard {
+    width: 70%;
+}
+
+@media screen and (max-width:476px) {
+    .blogsDetailsCard {
+        width: 100% !important;
+        margin:0px 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .blogsDetailsCard {
+        width: 80%;
+    }
+
+}

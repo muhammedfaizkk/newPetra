@@ -1,21 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-
-* {
-    font-family: "Poppins", sans-serif;
-}
-
-body {
-    font-size: 14px !important;
-    font-weight: 400 !important;
-    background-color: #cbcaca !important;
-    margin: 0;
-    padding: 0;
-    line-height: 24px !important;
-    overflow: hidden;
-}
-
-
-
 .bannercnt-mob {
     position: absolute;
     top: 50px;
@@ -671,7 +653,7 @@ select option {
 
 
 .Ddoorprosection {
-    position: relative;
+    position: relative !important;
     height: 100%;
     padding: 70px 50px 70px 50px;
 }
@@ -722,6 +704,7 @@ select option {
     background-color: #262626;
     padding: 25px;
     border-radius: 50%;
+    margin-top: 25px !important;
 }
 
 .swiper-button-prev::after {
@@ -932,7 +915,6 @@ select option {
     }
 
     .Ddoorprosection {
-        position: relative;
         height: 100%;
         padding: 20px 10px 70px 10px;
     }
