@@ -1,8 +1,13 @@
 .cardsInner-blogs {
-    padding: 40px 0px 70px;
+    padding: 35px 0px 70px;
 }
-.curr-locations{
-
+.curr-location div{
+    width: 1200px;
+}
+.curr-location{
+  padding:35px 0px 0px;
+  display: flex;
+  justify-content: center;
 }
 
 .blogsDetailsCard {

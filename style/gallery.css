@@ -22,8 +22,8 @@ body {
 }
 
 .container-gallery {
-	padding:70px 0px !important;
-	max-width:120rem;
+	padding: 70px 0px !important;
+	max-width: 120rem;
 	margin: 0 auto;
 	padding: 0 2rem 2rem;
 }
@@ -52,6 +52,7 @@ body {
 	flex: 1 0 24rem;
 	margin: 1rem;
 	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	cursor: pointer;
 	overflow: hidden;
 }
 
