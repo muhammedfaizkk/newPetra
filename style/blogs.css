@@ -1,14 +1,16 @@
 .cards-blogs {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 30px;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
     padding: 70px 0px;
     margin: 0 auto;
-    /* Center horizontally */
-    max-width: 1200px;
+    max-width: 1120px;
     /* Optional: Set a maximum width */
 }
 
+.cards-blogs .card {
+    border-radius: 15px;
+}
 
 
 
