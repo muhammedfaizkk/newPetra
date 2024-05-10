@@ -1195,6 +1195,9 @@ select option {
         gap: 10px;
 
     }
+    .product-end-cnt{
+        text-align: start;
+    }
 }
 
 .footer-logo {
