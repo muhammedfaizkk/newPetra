@@ -2,6 +2,7 @@
 body{
     overflow: hidden;
     line-height: 24px !important;
+    font-size: 14px !important;
 }
 .bannercnt-mob {
     position: absolute;

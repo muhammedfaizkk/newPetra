@@ -87,13 +87,19 @@
        gap: 20px;
    }
 
-   .product_display-rightsize-sub div {
+   .product_display-rightsize-sub div , .product_display-rightsize-size div{
        border: 1px solid #ebebeb;
        padding: 12px 18px;
        background: #fbfbfb;
        border-radius: 3px;
        cursor: pointer;
    }
+   .product_display-rightsize-size {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px;
+    gap: 10px;
+}
 
    .add-to-cart button {
        padding: 20px 40px;

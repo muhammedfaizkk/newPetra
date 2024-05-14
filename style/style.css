@@ -1195,7 +1195,8 @@ select option {
         gap: 10px;
 
     }
-    .product-end-cnt{
+
+    .product-end-cnt {
         text-align: start;
     }
 }
