@@ -22,14 +22,14 @@
             timeout: false,
             timeoutCountdown: 5000,
             onLoadEvent: true,
-            browser: [ 'animation-duration', '-webkit-animation-duration'],
-            overlay : false,
-            overlayClass : 'animsition-overlay-slide',
-            overlayParentElement : 'html',
-            transition: function(url){ window.location.href = url; }
+            browser: ['animation-duration', '-webkit-animation-duration'],
+            overlay: false,
+            overlayClass: 'animsition-overlay-slide',
+            overlayParentElement: 'html',
+            transition: function (url) { window.location.href = url; }
         });
 
-    } catch(err) {
+    } catch (err) {
         console.log(err)
     }
 
@@ -106,7 +106,7 @@
             var animationInString = '[data-animation], [data-animation-in]';
             var animationOutString = '[data-animation-out]';
 
-            slickAPI.on('init reinit', function() {
+            slickAPI.on('init reinit', function () {
                 var elementAnimate = $(this).find(animationInString);
                 elementAnimate.css("visibility", "hidden");
                 var firstAnimatingElements = $(this).find('.slick-current [data-animation], .slick-current [data-animation-in]');
@@ -142,7 +142,7 @@
                     speed: option.speed,
                     variableWidth: option.variablewidth,
                     variableHeight: option.variableheight,
-                    customPaging: function(slick, index) {
+                    customPaging: function (slick, index) {
                         var portrait = $(slick.$slides[index]).data('thumb');
                         return '<img src=" ' + portrait + ' "/>';
                     },
@@ -253,12 +253,12 @@
                     ]
                 });
 
-            slickAPI.on('afterChange', function(e, slick, currentSlide) {
+            slickAPI.on('afterChange', function (e, slick, currentSlide) {
                 var $animatingElements = $(this).find('[data-slick-index="' + currentSlide + '"]').find(animationInString);
                 doAnimations($animatingElements);
             });
 
-            slickAPI.on('beforeChange', function(e, slick, currentSlide, nextSlide) {
+            slickAPI.on('beforeChange', function (e, slick, currentSlide, nextSlide) {
                 var $animatingElements = $(this).find('[data-slick-index="' + nextSlide + '"]').find(animationInString);
                 if (!($(this).find('[data-slick-index="' + currentSlide + '"]').find(animationOutString).length === 0)) {
                     var $elementAnimateCurrent = $(this).find('[data-slick-index="' + currentSlide + '"]').find(animationOutString);
@@ -272,7 +272,7 @@
 
             function doAnimations(elements) {
                 var animationEndEvents = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-                elements.each(function() {
+                elements.each(function () {
                     elements.css("visibility", "visible");
                     var $animationDelay = $(this).data('animation-delay');
                     var $animationType = 'animated ' + $(this).data('animation');
@@ -282,7 +282,7 @@
                         'animation-delay': $animationDelay,
                         '-webkit-animation-delay': $animationDelay
                     });
-                    $(this).addClass($animationType).one(animationEndEvents, function() {
+                    $(this).addClass($animationType).one(animationEndEvents, function () {
                         $(this).removeClass($animationType);
                     });
                 });
@@ -291,14 +291,14 @@
             function doAnimationsOut(elements) {
                 var animationEndEvents = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
-                elements.each(function() {
+                elements.each(function () {
                     var $animationDelay = "0s";
                     var $animationType = 'animated ' + $(this).data('animation-out');
                     $(this).css({
                         'animation-delay': $animationDelay,
                         '-webkit-animation-delay': $animationDelay
                     });
-                    $(this).addClass($animationType).one(animationEndEvents, function() {
+                    $(this).addClass($animationType).one(animationEndEvents, function () {
                         $(this).removeClass($animationType);
                     });
                     elements.css("visibility", "hidden");
@@ -314,7 +314,7 @@
             });
         });
 
-    } catch(err) {
+    } catch (err) {
         console.log(err)
     }
 
@@ -324,10 +324,10 @@
             var arrow = that.find('.slick-arrow');
             var heightImg = that.find('.js-img').outerHeight();
             var heightArrow = that.find('.slick-arrow').outerHeight();
-            var offsetTop = heightImg/2 - heightArrow/2;
+            var offsetTop = heightImg / 2 - heightArrow / 2;
             arrow.css('top', offsetTop);
         });
-    } catch(err) {
+    } catch (err) {
         console.log(err);
     }
 
@@ -335,7 +335,7 @@
 (function ($) {
     // USE STRICT
     "use strict";
-    
+
     try {
         new WOW().init({
             animateClass: 'animated',
@@ -345,7 +345,7 @@
         console.log(error);
     }
 
-  
+
 })(jQuery);
 (function ($) {
     // USE STRICT
@@ -359,7 +359,7 @@
     try {
         $('.cd100').each(function () {
             var that = $(this);
-            var y = 0, m =0, d = 0, h = 0, min = 0, sec = 0;
+            var y = 0, m = 0, d = 0, h = 0, min = 0, sec = 0;
             var countdownYears = that.find('[data-years]');
             var countdownMonths = that.find('[data-months]');
             var countdownDays = that.find('[data-days]');
@@ -406,7 +406,7 @@
             });
         })
 
-    } catch(err) {
+    } catch (err) {
         console.log(err);
     }
 
@@ -429,7 +429,7 @@
             });
         });
 
-    } catch(err) {
+    } catch (err) {
         console.log(err);
     }
 
@@ -456,7 +456,7 @@
                             }
                         });
                     }
-                }, {offset: 'bottom-in-view'});
+                }, { offset: 'bottom-in-view' });
             })
 
         });
@@ -477,7 +477,7 @@
 
         matchHeightItem.matchHeight();
 
-    } catch(err) {
+    } catch (err) {
         console.log(err)
     }
 })(jQuery);
@@ -497,7 +497,7 @@
             var isotopeContent = that.find('.isotope-content');
 
             var $dataHori = false;
-            if(that.data('isotope-hori'))
+            if (that.data('isotope-hori'))
                 $dataHori = that.data('isotope-hori');
 
             // init Isotope
@@ -505,14 +505,14 @@
                 var $iso = isotopeContent.isotope({
                     itemSelector: '.isotope-item',
                     percentPosition: true,
-                    animationEngine : 'best-available',
+                    animationEngine: 'best-available',
                     masonry: {
                         columnWidth: '.isotope-item-sizer',
                         horizontalOrder: $dataHori
                     }
                 });
 
-                $iso.imagesLoaded().progress( function() {
+                $iso.imagesLoaded().progress(function () {
                     $iso.isotope('layout');
                 });
 
@@ -522,7 +522,7 @@
             });
 
             isotopeFilter.on('click', 'li span', function () {
-                isotopeContent.isotope({filter: $(this).attr('data-filter')});
+                isotopeContent.isotope({ filter: $(this).attr('data-filter') });
             });
 
             isotopeFilter.on('click', 'li', function () {
@@ -533,7 +533,7 @@
 
         });
 
-    } catch(err) {
+    } catch (err) {
         console.log(err)
     }
 })(jQuery);
@@ -571,7 +571,7 @@
         var html5Slider = document.getElementById('pricepicker');
         if (html5Slider !== null) {
             noUiSlider.create(html5Slider, {
-                start: [ 1, 500 ],
+                start: [1, 500],
                 connect: true,
                 step: 10,
                 range: {
@@ -580,7 +580,7 @@
                 }
             });
             var nodes = [document.getElementById('lower-value'), document.getElementById('upper-value')];
-            html5Slider.noUiSlider.on('update', function( values, handle ) {
+            html5Slider.noUiSlider.on('update', function (values, handle) {
                 nodes[handle].innerHTML = "$" + values[handle];
             });
         }
@@ -609,7 +609,7 @@
                         var lineItem = that.find('.line');
                         lineItem.addClass('active');
                     }
-                }, {offset: 'bottom-in-view'});
+                }, { offset: 'bottom-in-view' });
             })
 
         });
@@ -701,7 +701,7 @@
 
         });
 
-    } catch(err) {
+    } catch (err) {
         console.log(err)
     }
 })(jQuery);
@@ -722,33 +722,33 @@
             var that = $(this);
             var posParallax = that.offset().top;
             var hParallax = that.outerHeight();
-            var setPosParallax = function() {
+            var setPosParallax = function () {
                 if ($(window).width() > 992) {
-                    if(bgParallax.outerHeight() < $(window).height()) {
+                    if (bgParallax.outerHeight() < $(window).height()) {
 
                         x = that.offset().top - $(window).scrollTop();
 
-                        $(that).css('background-position','center '+(x/y)+'px');
+                        $(that).css('background-position', 'center ' + (x / y) + 'px');
                     }
                     else {
-                        $(that).css('background-position','center', 'center');
+                        $(that).css('background-position', 'center', 'center');
                     }
                 } else {
-                    $(that).css('background-attachment','scroll');
+                    $(that).css('background-attachment', 'scroll');
                 }
             };
 
             setPosParallax();
 
-            $(window).on('resize', function(){
+            $(window).on('resize', function () {
                 setPosParallax();
             });
 
-            $(window).on('scroll',function(){
+            $(window).on('scroll', function () {
                 setPosParallax();
             });
         });
-    } catch(err) {
+    } catch (err) {
         console.log(err);
     }
 
@@ -859,7 +859,7 @@
                     var bg = $(this).data('background');
 
                     fsContainer.delay(300).queue(function (next) {
-                        $(this).css('background-image','url("'+bg+'")');
+                        $(this).css('background-image', 'url("' + bg + '")');
                         next();
                     });
                 });
@@ -888,7 +888,7 @@
         var stickyEl = $(".js-sticky");
         var windowWidth = $(window).width();
 
-        if(windowWidth > 992) {
+        if (windowWidth > 992) {
             stickyEl.each(function () {
                 var that = $(this);
 
