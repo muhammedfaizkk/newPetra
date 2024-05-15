@@ -21,7 +21,7 @@ var swiper = new Swiper(".homeDoorprosection", {
     delay: 5000,
     disableOnInteraction: false,
   },
-  spaceBetween:40,
+  spaceBetween: 40,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -88,7 +88,7 @@ var swiper = new Swiper(".mySwiperprosection", {
     delay: 5000,
     disableOnInteraction: false,
   },
-  spaceBetween:40,
+  spaceBetween: 40,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -110,33 +110,34 @@ var swiper = new Swiper(".mySwiperprosection", {
 });
 
 
-  var swiper = new Swiper(".Ddoorprosection", {
-    slidesPerView: 1,
-    grabCursor: true,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
+var swiper = new Swiper(".Ddoorprosection", {
+  slidesPerView: 1,
+  grabCursor: true,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  spaceBetween: 40,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    500: {
+      slidesPerView: 2,
+      spaceBetween: 40,
     },
-    spaceBetween:40,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+    800: {
+      slidesPerView: 3,
+      spaceBetween: 40,
     },
-    breakpoints: {
-      500: {
-        slidesPerView: 2,
-        spaceBetween: 40,
-      },
-      800: {
-        slidesPerView: 3,
-        spaceBetween: 40,
-      },
-      1200: {
-        slidesPerView: 4,
-        spaceBetween: 50,
-      },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 50,
     },
-  });
+  },
+});
+
 
 
