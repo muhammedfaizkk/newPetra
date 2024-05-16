@@ -144,9 +144,12 @@
    .product-description {
        margin-top: 50px !important;
    }
+
    .swiper-pagination {
-    color: white !important; /* Change the color to white */
-}
+       color: white !important;
+       /* Change the color to white */
+   }
+
    @media only screen and (max-width:1227px) {}
 
    @media only screen and (max-width:900px) {
